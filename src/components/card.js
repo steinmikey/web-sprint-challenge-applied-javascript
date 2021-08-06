@@ -27,8 +27,8 @@ const Card = (article) => {
   cAuthorPhoto.src = article.authorPhoto;
   cAuthorName.textContent = `By ${article.authorName}`;
 
-  cardContainer.addEventListener("click", (event) => {
-    console.log(cHeadline);
+  cardContainer.addEventListener("click", (_event) => {
+    console.log(cHeadline.textContent);
   });
 
   return cardContainer;
