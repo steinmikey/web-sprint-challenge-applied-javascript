@@ -1,7 +1,6 @@
 import axios from "axios";
 
-// const Tabs = (topics) => {
-function Tabs(topics) {
+const Tabs = (topics) => {
   const tabsContainer = document.createElement("div");
   tabsContainer.classList.add("topics");
 
@@ -12,7 +11,7 @@ function Tabs(topics) {
     tabItem.textContent = item;
   });
   return tabsContainer;
-}
+};
 
 // ^^^^ TASK 3 ^^^^
 // ---------------------
